@@ -11,6 +11,13 @@
 		3DA22C262B7A2BCA00A23930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22C252B7A2BCA00A23930 /* ContentView.swift */; };
 		3DA22C282B7A2BCC00A23930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA22C272B7A2BCC00A23930 /* Assets.xcassets */; };
 		3DA22C2B2B7A2BCC00A23930 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA22C2A2B7A2BCC00A23930 /* Preview Assets.xcassets */; };
+		3DA22C362B7A2DAA00A23930 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22C352B7A2DAA00A23930 /* APIService.swift */; };
+		3DA22C382B7A30BF00A23930 /* AirbnbListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22C372B7A30BF00A23930 /* AirbnbListingsView.swift */; };
+		3DA22C3A2B7A314100A23930 /* AirbnbListingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22C392B7A314100A23930 /* AirbnbListingCardView.swift */; };
+		3DA22C3C2B7A318000A23930 /* AirbnbDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22C3B2B7A318000A23930 /* AirbnbDetailView.swift */; };
+		3DA22C3E2B7A31CC00A23930 /* AirbnbListingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22C3D2B7A31CC00A23930 /* AirbnbListingsResponse.swift */; };
+		3DA22C402B7A31DC00A23930 /* AirbnbListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22C3F2B7A31DC00A23930 /* AirbnbListing.swift */; };
+		3DA22C422B7A3CAA00A23930 /* AirbnbListingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22C412B7A3CAA00A23930 /* AirbnbListingsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		3DA22C252B7A2BCA00A23930 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3DA22C272B7A2BCC00A23930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA22C2A2B7A2BCC00A23930 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DA22C352B7A2DAA00A23930 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3DA22C372B7A30BF00A23930 /* AirbnbListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingsView.swift; sourceTree = "<group>"; };
+		3DA22C392B7A314100A23930 /* AirbnbListingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingCardView.swift; sourceTree = "<group>"; };
+		3DA22C3B2B7A318000A23930 /* AirbnbDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbDetailView.swift; sourceTree = "<group>"; };
+		3DA22C3D2B7A31CC00A23930 /* AirbnbListingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingsResponse.swift; sourceTree = "<group>"; };
+		3DA22C3F2B7A31DC00A23930 /* AirbnbListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListing.swift; sourceTree = "<group>"; };
+		3DA22C412B7A3CAA00A23930 /* AirbnbListingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingsViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,11 @@
 		3DA22C222B7A2BCA00A23930 /* Airbnb */ = {
 			isa = PBXGroup;
 			children = (
+				3DA22C342B7A2D9700A23930 /* Services */,
+				3DA22C332B7A2D8500A23930 /* ViewModels */,
+				3DA22C322B7A2D8000A23930 /* Models */,
+				3DA22C312B7A2D7900A23930 /* Views */,
 				3DA22C232B7A2BCA00A23930 /* AirbnbApp.swift */,
-				3DA22C252B7A2BCA00A23930 /* ContentView.swift */,
 				3DA22C272B7A2BCC00A23930 /* Assets.xcassets */,
 				3DA22C292B7A2BCC00A23930 /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				3DA22C2A2B7A2BCC00A23930 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DA22C312B7A2D7900A23930 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DA22C252B7A2BCA00A23930 /* ContentView.swift */,
+				3DA22C372B7A30BF00A23930 /* AirbnbListingsView.swift */,
+				3DA22C392B7A314100A23930 /* AirbnbListingCardView.swift */,
+				3DA22C3B2B7A318000A23930 /* AirbnbDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DA22C322B7A2D8000A23930 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DA22C3D2B7A31CC00A23930 /* AirbnbListingsResponse.swift */,
+				3DA22C3F2B7A31DC00A23930 /* AirbnbListing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3DA22C332B7A2D8500A23930 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3DA22C412B7A3CAA00A23930 /* AirbnbListingsViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3DA22C342B7A2D9700A23930 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3DA22C352B7A2DAA00A23930 /* APIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA22C3E2B7A31CC00A23930 /* AirbnbListingsResponse.swift in Sources */,
 				3DA22C262B7A2BCA00A23930 /* ContentView.swift in Sources */,
+				3DA22C3C2B7A318000A23930 /* AirbnbDetailView.swift in Sources */,
+				3DA22C382B7A30BF00A23930 /* AirbnbListingsView.swift in Sources */,
+				3DA22C3A2B7A314100A23930 /* AirbnbListingCardView.swift in Sources */,
+				3DA22C422B7A3CAA00A23930 /* AirbnbListingsViewViewModel.swift in Sources */,
+				3DA22C362B7A2DAA00A23930 /* APIService.swift in Sources */,
+				3DA22C402B7A31DC00A23930 /* AirbnbListing.swift in Sources */,
 				3DA22C242B7A2BCA00A23930 /* AirbnbApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
